@@ -1,0 +1,36 @@
+name: run update_pages.py
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: '0 0 * * *'
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        
+        steps:
+
+              - name: checkout repo content
+                uses: actions/checkout@v2 # checkout the repository content
+
+              - name: setup python
+                uses: actions/setup-python@v4
+                with:
+                  python-version: '3.10' # install the python version needed
+
+              - name: install python packages
+                run: |
+                  python -m pip install --upgrade pip
+                  pip install pandas numpy jinja2 lxml
+
+              - name: execute update script # run main.py
+                run: python update_pages.py
+
+              - name: commit files
+                run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git commit -am "Daily Update" --allow-empty
+                  git push
