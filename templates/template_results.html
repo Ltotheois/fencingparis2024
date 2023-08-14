@@ -1,0 +1,93 @@
+{% extends "template_base.html" %}
+
+{% block title %}
+{{ gender_label }}'s {{ weapon_label }} @ Paris 2024
+{% endblock %}
+
+{% block description %}
+Ranking for Fencing in {{ gender_label }}'s {{ weapon_label }} at the 2024 Olympic Games in Paris
+{% endblock %}
+
+
+{% block main %}
+	<h1>
+		<a href="index.html" class="link" style="font-size: 0.5em;">Qualification for Fencing at Paris 2024 in</a><br/>
+		<span>{{ gender_label }}'s {{ weapon_label }}</span>
+	</h1>
+
+	<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+		<section>
+			<h2>Team Ranking</h2>
+			<div class="tablecontainer">
+				<table id="table_team">
+					<thead>
+						<tr>
+							<th></th>
+							{% for column_label in ranking_team_columns %}
+							<th>{{ column_label }}</th>
+							{% endfor %}
+						</tr>
+					</thead>
+					<tbody>
+						{% for i, row in tables["team"].iterrows() %}
+						{% set qualified_class = row["Qualified"] %}
+						<tr class="qualified_{{ qualified_class }}">
+							<td>{{ i+1 }}</td>
+							{% for column_label in ranking_team_columns %}
+							<td>{{ row[column_label] }}</td>
+							{% endfor %}
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section>
+			<h2>Individual Ranking</h2>
+
+			<div class="tablecontainer">
+				<table id="table_individual">
+					<thead>
+						<tr>
+							<th></th>
+							{% for column_label in ranking_individual_columns %}
+							<th>{{ column_label }}</th>
+							{% endfor %}
+						</tr>
+					</thead>
+					<tbody>
+						{% for i, row in tables["individual"].iterrows() %}
+						{% set qualified_class = row["Qualified"] %}
+						<tr class="qualified_{{ qualified_class }}">
+							<td>{{ i+1 }}</td>
+							{% for column_label in ranking_individual_columns %}
+							<td>{{ row[column_label] }}</td>
+							{% endfor %}
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+
+
+	<section>
+		<h2>Legend</h2>
+		
+		<h3>Teams</h3>
+		<p class="legend qualified_1">The top 4 teams are directly qualified.</p>
+		<p class="legend qualified_2">Then the best remaining team from each zone is qualified as long as it is placed 16th or better.</p>
+		<p class="legend qualified_3">The remaining places (to reach a total of eight) are given to the best so-far non-qualified teams.</p>
+		
+		<h3>Individual</h3>
+		<p class="legend qualified_1">Every qualified country is allowed to nominate 4 fencers (3 for individual, 1 substitute).</p>
+		<p class="legend qualified_2">Then the two best Europeans, the two best Asians, the best American and the best African fencer are qualified (one fencer per country, countries with a team are excluded).</p>
+		<p class="legend qualified_4">All countries with no qualified athlete can send one athlete to the zonal qualifiers.</p>
+	</section>
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}

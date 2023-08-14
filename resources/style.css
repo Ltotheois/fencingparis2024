@@ -1,0 +1,398 @@
+/* nunito-sans-300 - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('resources/fonts/nunito-sans-v6-latin-300.eot');
+	src: local('Nunito Sans Light'), local('NunitoSans-Light'), url('resources/fonts/nunito-sans-v6-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-300.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-300.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+/* nunito-sans-300italic - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url('resources/fonts/nunito-sans-v6-latin-300italic.eot');
+	src: local('Nunito Sans Light Italic'), local('NunitoSans-LightItalic'), url('resources/fonts/nunito-sans-v6-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-300italic.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-300italic.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+/* nunito-sans-600 - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url('resources/fonts/nunito-sans-v6-latin-600.eot');
+	src: local('Nunito Sans SemiBold'), local('NunitoSans-SemiBold'), url('resources/fonts/nunito-sans-v6-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-600.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-600.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+/* nunito-sans-600italic - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: italic;
+	font-weight: 600;
+	src: url('resources/fonts/nunito-sans-v6-latin-600italic.eot');
+	src: local('Nunito Sans SemiBold Italic'), local('NunitoSans-SemiBoldItalic'), url('resources/fonts/nunito-sans-v6-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-600italic.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-600italic.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+/* nunito-sans-700 - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('resources/fonts/nunito-sans-v6-latin-700.eot');
+	src: local('Nunito Sans Bold'), local('NunitoSans-Bold'), url('resources/fonts/nunito-sans-v6-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-700.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-700.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+/* nunito-sans-700italic - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url('resources/fonts/nunito-sans-v6-latin-700italic.eot');
+	src: local('Nunito Sans Bold Italic'), local('NunitoSans-BoldItalic'), url('resources/fonts/nunito-sans-v6-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-700italic.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-700italic.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+/* nunito-sans-800 - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: url('resources/fonts/nunito-sans-v6-latin-800.eot');
+	src: local('Nunito Sans ExtraBold'), local('NunitoSans-ExtraBold'), url('resources/fonts/nunito-sans-v6-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-800.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-800.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+/* nunito-sans-900 - latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 900;
+	src: url('resources/fonts/nunito-sans-v6-latin-900.eot');
+	src: local('Nunito Sans Black'), local('NunitoSans-Black'), url('resources/fonts/nunito-sans-v6-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('resources/fonts/nunito-sans-v6-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-900.woff') format('woff'), /* Modern Browsers */
+	url('resources/fonts/nunito-sans-v6-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('resources/fonts/nunito-sans-v6-latin-900.svg#NunitoSans') format('svg');
+	font-display: auto;
+}
+
+
+:root {
+	--color-background:			white;
+	--color-text:				#102326;
+	--box-shadow:				0 0.25rem 1rem rgb(48 55 66 / 15%);
+	--drop-shadow:				1px 1px 2px rgb(48 55 66);
+	--color-accent:				#ff1a74;
+	--color-accent-hover:		#85c7ff;
+	--color-footer-background:	#333333;
+	--color-footer:				white;
+	--color-modal-background:	#80808080;
+	--color-logos:				#333333;
+}
+
+:root.darktheme {
+	--color-background: #1e1e1e;
+	--color-text: #ffffff;
+	--box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 65%);
+	--drop-shadow: 1px 1px 2px #777777;
+	--color-accent: #fd5798;
+	--color-accent-hover: #85c7ff;
+	--color-footer-background: #121212;
+	--color-footer: white;
+	--color-modal-background: #08080880;
+	--color-logos:				white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Nunito Sans', sans-serif;
+	background: var(--color-background);
+	color: var(--color-text);
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.main-inner {
+	margin: 20px;
+	max-width: 100%;
+}
+
+.spacer {
+	flex: 1;
+}
+
+.card {
+	min-width: 40px;
+	min-height: 50px;
+	box-shadow: var(--box-shadow);
+	text-align: center;
+	border: 0;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border-radius: 5px;
+	flex: 1 1 240px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+	.card:hover, .card.active {
+		scale: 1.02;
+	}
+
+	.card:hover img, .card.active img, .card:hover i, .card.active i, .card:hover svg, .card.active svg {
+		scale: 1.05;
+	}
+
+	.card img, .card i, .card svg {
+		transition: scale 0.5s;
+	}
+
+	.card {
+		opacity: 0;
+		transition: opacity 1s, scale 0.1s;
+		overflow: hidden;
+	}
+
+	.card.animation {
+		opacity: 1;
+	}
+
+	#themetoggle:hover {
+		scale: 1.1;
+		transition: scale 0.1s;
+	}
+}
+
+
+.card img, .card i, .card svg {
+	object-fit: contain;
+	width: 100%;
+	height: 120px;
+	align-self: center;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: var(--color-logos);
+	fill: var(--color-logos);
+}
+
+.card:hover {
+	color: var(--color-accent);
+}
+
+.card:hover .nohover {
+	color: var(--color-text);
+}
+
+.footer {
+	width: 100%;
+	background: var(--color-footer-background);
+	min-height: 100px;
+	padding: 20px;
+}
+
+.footer p {
+	color: var(--color-footer);
+	max-width: min(800px, 80vw);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.footer p.license {
+	font-size: 0.7rem;
+}
+
+.link {
+	color: var(--color-accent);
+}
+.link:hover, .link.active {
+	color: var(--color-accent-hover);
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 20px 0px;
+	gap: 20px;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.themetoggle {
+	height: 1em;
+	fill: var(--color-accent);
+	cursor: pointer;
+}
+
+.themetoggle:hover {
+	fill: var(--color-accent-hover);
+}
+
+.darktheme .themetoggle.light {
+	display: none;
+}
+
+.themetoggle.dark {
+	display: none;
+}
+.darktheme .themetoggle.dark {
+	display: block;
+}
+
+#themetoggle {
+	all: unset;
+	display: block;
+	float: right;
+	margin-top: 0.67em;
+	font-size: 2em;
+}
+
+#themetoggle:focus-visible {
+	border: 1px solid var(--color-accent-hover);
+}
+
+
+/* New Styles */
+td {
+	text-align: right;
+}
+
+#table_individual td:nth-child(2),
+#table_individual td:nth-child(3),
+#table_team td:nth-child(2){
+	text-align: left;
+}
+
+#table_individual td:nth-child(4),
+#table_team td:nth-child(3) {
+	font-weight: 700;
+}
+
+/* th { */
+	/* background: var(--color-modal-background); */
+/* } */
+
+table {
+	border-collapse: collapse;
+}
+
+
+section {
+    flex: 500px 1;
+    min-width: 500px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section h2 {
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+.tablecontainer {
+	font-size: 0.8rem;
+	overflow: auto;
+	max-height: max( calc(100vh - 200px), 800px );
+}
+
+.legend {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.qualified_1 {
+	background: #8ac926;
+	color: black;
+}
+
+.qualified_2 {
+	background: #ffca3a;
+	color: black;
+}
+
+.qualified_3 {
+	background: #1982c4;
+	color: black;
+}
+
+.qualified_4 {
+	background: #ff595f62;
+}
+
+.index.card span{
+	font-size: 2em;
+    font-weight: 700;
+}
+
+.index.card span:nth-child(1){
+    color: var(--color-accent-hover);
+    translate: -10% 19%;
+}
+
+.index.card span:nth-child(2){
+    color: var(--color-accent);
+    translate: +10% -19%;
+}
+
+.index_paragraph {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}

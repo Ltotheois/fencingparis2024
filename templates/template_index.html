@@ -1,0 +1,65 @@
+{% extends "template_base.html" %}
+
+{% block title %}
+Fencing at Paris 2024
+{% endblock %}
+
+{% block description %}
+The ranking for fencing at the Paris 2024 Olympic Games is presented for the three weapons - epee, foil, and sabre - for both genders.
+{% endblock %}
+
+
+{% block main %}
+	<h1>
+		Qualification for Fencing at Paris 2024
+	</h1>
+
+	<div class="flex-container">
+		{% for gender_key, gender_label in genders.items() %}
+		{% for weapon_key, weapon_label in weapons.items() %}
+		<a class="card index" href="{{ weapon_label.lower() }}_{{gender_label.lower() }}.html">
+			<span>{{ gender_label }}'s</span>
+			<span>{{ weapon_label}}</span>
+		</a>
+		{% endfor %}
+		<div style="flex-basis: 100%;"></div>
+		{% endfor %}
+	</div>
+
+	<p class="index_paragraph">
+		The qualification in fencing for the Olympic Games 2024 in Paris is not easily explained.
+		To begin with, the qualification is split into teams and individuals.
+	</p>
+	
+	<p class="index_paragraph">
+		The system is explained most easily by starting with the teams.
+		<span class="qualified_1">The top 4 teams are directly qualified.</span>
+		<span class="qualified_2">Then, the top team from each of the four zones (Europe, Asia/Oceania, Americas, Africa) is qualified, as long as it is placed 16th or better.</span>
+		<span class="qualified_3">If one or more of the zones do not have a team in 5th to 16th place, the best so-far not-qualified team(s) in the rankings are qualified.</span>
+		This results in a total of eight teams with each team nominating four fencers, three of which also start in the individual competition.
+	</p>
+	
+	<p class="index_paragraph">
+		<span class="qualified_1">For the individual competition, three fencers of each qualified team are qualified.</span>
+		Then all already qualified nations are removed from the rankings and only the best fencer from each nation is kept.
+		<span class="qualified_2">The two best Europeans, the two best Asians, the best American and the best African fencer are then qualified.</span>
+		<span class="qualified_4">Finally, all countries with no qualified athlete can send one athlete to the zonal qualifiers.</span>
+		At each of the zonal qualifiers, only the winner will qualify for the Olympic Games. 
+	</p>
+	
+	<p class="index_paragraph">
+		After mastering the understanding of this system myself, I spend so much time explaining people these rules that I decided it would be easier to publish the current rankings on a website.
+		To do so, a script fetches the current rankings from the FIE webpage, filters the events that took place after 3rd of April 2023 (start of the qualification) and creates a ranking.
+		Then, the previously explained rules are applied to determine who would qualify currently.
+	</p>
+	
+	<p class="index_paragraph">
+		Of course, there are some caveats I cannot take into account. First, there are 6 additional places for the host nation France (however they cannot start more than three fencers in any given discipline). Second, there is one wildcard per gender. Fourth, if a nation qualifies with a team they can freely choose 4 athletes but here the top 4 athletes are indicated.
+	</p>
+	
+	<p class="index_paragraph">
+		As this website is only a fun side project of mine, all data is without warranty. However, if you think I made some mistakes or just want to give me some feedback, <script>document.write("<n pynff='yvax' uers='znvygb:yhvf.obanu@tznvy.pbz'>pbagnpg zr</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>.
+	</p>
+
+
+{% endblock %}
