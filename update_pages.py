@@ -84,7 +84,7 @@ for weapon_key, weapon_label in weapons.items():
             table = table.rename(columns={table.columns[0]: constant_columns[0],
                                       table.columns[1]: constant_columns[1]})
 
-            competition_columns[label] = set(table.columns) - set(constant_columns)
+            competition_columns[label] = [column for column in table.columns if column not in constant_columns]
             contributing_competitions_columns[label] = []
 
             for column in competition_columns[label]:
@@ -94,7 +94,7 @@ for weapon_key, weapon_label in weapons.items():
 
                 competition_date = datetime(year+2000, month, day)
                 if qualification_start < competition_date:
-                    contributing_competitions_columns[label].append(column)    
+                    contributing_competitions_columns[label].append(column)
 
             table["Zone"] = table["Country"].apply(convert_country_to_zone)
 
