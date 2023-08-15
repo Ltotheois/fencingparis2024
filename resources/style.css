@@ -329,12 +329,13 @@ td {
 
 table {
 	border-collapse: collapse;
+	width: 100%;
 }
 
 
 section {
-    flex: 500px 1;
-    min-width: 500px;
+    flex: 400px 1;
+    min-width: 400px;
     box-shadow: var(--box-shadow);
     padding: 20px;
     border-radius: 5px;
