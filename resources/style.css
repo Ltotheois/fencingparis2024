@@ -164,8 +164,9 @@ body {
 }
 
 .main-inner {
-	margin: 20px;
-	max-width: calc(100% - 40px);
+	--_margin: 20px;
+	margin: var(--_margin);
+	max-width: calc(100% - calc( var(--_margin) * 2 ));
 }
 
 .spacer {
@@ -396,4 +397,25 @@ section h2 {
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+@media screen and (max-width: 500px) {
+	.main-inner {
+		--_margin: 5px;
+	}
+
+	section {
+		padding: 10px;
+		margin-top: 0px;
+		min-width: 300px;
+	}
+	
+	section h2 {
+		margin-bottom: 15px;
+	}
+	
+	h1.composite_heading {
+		margin-top: 0px;
+	}
 }
