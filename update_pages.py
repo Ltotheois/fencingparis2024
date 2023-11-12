@@ -48,6 +48,7 @@ def convert_string_to_points(tmp):
             return 0
         else:
             return float(tmp)
+    tmp = tmp.replace("+", "")
     if tmp.startswith("(") and tmp.endswith(")"):
         tmp = tmp[1: -1]
     tmp = float(tmp)
