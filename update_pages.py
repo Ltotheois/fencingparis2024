@@ -99,7 +99,7 @@ for weapon_key, weapon_label in weapons.items():
 
             table["Zone"] = table["Country"].apply(convert_country_to_zone)
 
-            max_events = 6 if label == "Teams" else 7
+            max_events = 6 if label == "team" else 7
 
             if len(contributing_competitions_columns[label]) > max_events:
                 datavalues = table[contributing_competitions_columns[label]].values
